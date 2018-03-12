@@ -1,0 +1,41 @@
+MAVEN Notes:
+------------
+- Folder Structure:(top level folder structure of our application as expected by Maven)
+  * src/main/java (we store all the java code under this directory with several packages with names like 'com.companyname.division')
+  * target
+  * pom.xml
+  Maven looks for files under src/main/java to act on them.
+  Maven puts end product(compiled/pacakaged artifacts) under target folder.
+  Maven expects a pom.xml at the top level directory of a project/application.
+  Unit test code can be kept under src/test/java.
+
+- POM file 4 basic parts:
+  1) Project Information
+    * groupId (company name, in the format, 'com.companyname.blahblah')
+    * artifactId (project/appilcation name)
+    * version (version of the project/application)
+    * packaging (packaging type)
+  2) Dependencies
+    Things required for our application to work. some thing like java libraries which would be refered or used by our application code.
+    
+    <dependencies>
+      <dependency>
+        <groupId></groupId>
+        <artifactId></artifactId>
+        <version></version>
+      </dependency>
+    <dependencies>
+    
+  3) Build
+    * Plugins
+    * Directory Structure
+    
+    The version name of the project mentioned in the <project> tag can be overwritten here using the tag <finalname></finalname>
+    
+  4) Repositories
+
+- Goals
+
+
+
+-Dependencies
