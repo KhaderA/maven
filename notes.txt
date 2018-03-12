@@ -30,7 +30,8 @@ MAVEN Notes:
     * Plugins
     * Directory Structure
     
-    The version name of the project mentioned in the <project> tag can be overwritten here using the tag <finalname></finalname>
+    The defaults mentioned in the pom.xml can be overwritten in the build section. For Eg,
+    The version name of the project mentioned in the <project> tag can be overwritten here using the tag <finalName></finalName>
     
   4) Repositories
 
