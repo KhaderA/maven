@@ -34,8 +34,13 @@ MAVEN Notes:
     
   4) Repositories
 
-- Goals
 
+- Goals
+ 1) clean - deletes the target directory and any generated resources
+ 2) compile- compiles all source code, copies resources to classes directory
+ 3) package - runs compile command first, runs tests, packages the app based on the specified package type
+ 4) install - runs the package command first and then copies the resultant artifact to the local repository(usually c:\users\khader\.m2)
+ 5) deploy - runs the install command first and then copied the artifact to the corporate repository. It does not deploy to any app server.
 
 
 -Dependencies
