@@ -44,4 +44,29 @@ MAVEN Notes:
  5) deploy - runs the install command first and then copied the artifact to the corporate repository. It does not deploy to any app server.
 
 
--Dependencies
+-Dependencies(resources required for our project to run)
+ Need 3 things to use dependency,
+ - groupId
+ - artifactId
+ - version
+ 
+ syntax:
+ <dependencies>
+    <dependency>
+        <groupId></groupId>
+        <artifactId></artifactId>
+        <version></version>
+    </dependency>
+ </dependencies>
+ 
+ Versions:
+ SNAPSHOT - development version of project/code
+ release
+ 
+ Types:
+ pom,jar(defaulttype),maven-plugin,ejb,war,ear,rar,par
+ 
+ 
+ Transitive Dependencies:
+
+ Scopes:
