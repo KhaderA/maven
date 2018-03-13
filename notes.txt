@@ -34,6 +34,19 @@ MAVEN Notes:
     The version name of the project mentioned in the <project> tag can be overwritten here using the tag <finalName></finalName>
     
   4) Repositories
+  Local Repo:
+  Maven stores everything it downloads here. By default, it is homedirectory\.m2. And this is the first place maven refers for any       files.
+  Corporate Repository - Nexus, Artifactory
+  
+  * Dependency Repo
+    Where we download all of our dependencies from.
+    Can contain just releases and/or snapshots also.
+    Not uncommon to have them in separate repositories.
+  
+  * Plugin Repo
+    
+  
+  * Releases/Snapshots
 
 
 - Goals
@@ -65,8 +78,14 @@ MAVEN Notes:
  
  Types:
  pom,jar(defaulttype),maven-plugin,ejb,war,ear,rar,par
- 
- 
+  
  Transitive Dependencies:
+ Maven automatically downloads dependencies required for the declared dependency item to work.
 
  Scopes:
+ compile - default scope
+ provided - 
+ runtime
+ test
+ system
+ import
